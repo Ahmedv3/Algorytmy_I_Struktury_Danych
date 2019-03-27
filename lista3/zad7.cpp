@@ -35,7 +35,7 @@ int poziom(node *&t, int key)
 			n = n->left;
 		else n = n->right;
 	}
-	return n ? level : 0; // jesli n nie jest nullem to zwroc 0 jak nie to zwroc level 
+	return n!=nullptr ? level : 0; // jesli n nie jest nullem to zwroc level jak jest nullem zwroc 0. 
 }
 
 int main(int argc, char const *argv[])
