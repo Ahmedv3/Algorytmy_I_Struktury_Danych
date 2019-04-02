@@ -19,7 +19,7 @@ public:
 	iterator(node* t) :
 		currentNode(t)
 	{ }
-// wypisuje elementy w kolejnosci wpisywania
+//przechodzi przez elementy w kolejnosci inorder
 	iterator begin(node* t)
 	{
 		if(t)
@@ -29,7 +29,7 @@ public:
 				t = t->left;
 			}
 		}
-		return iterator(t); // wypisuje ostatni element
+		return iterator(t); //zwraca obiekt klasy iterator ostatni po lewej
 	}
 
 	iterator end(node* t)
